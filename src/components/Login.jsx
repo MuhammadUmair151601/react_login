@@ -1,15 +1,18 @@
 import React from 'react'
+import { FaUser, FaLock } from "react-icons/fa";
 
 const Login = () => {
   return (
     <div className='wrapper'>
       <form action="">
-        <h1>Login</h1>
+        <h1 className='text-3xl font-bold'>Login</h1>
         <div>
           <input type="text" placeholder='Username' required />
+          <FaUser />
         </div>
         <div>
           <input type="password" placeholder='Password' required />
+          <FaLock />
           </div>
           <div>
             <label><input type="checkbox"/>Remember me</label>
