@@ -2,9 +2,16 @@ import React from "react";
 import { FaUser, FaLock } from "react-icons/fa";
 
 const Login = () => {
+  const submithandler = (e)=>{
+      e.preventdefault()
+      e.target.reset
+    }
   return (
+    
     <div className="h-100 w-110 rounded-[30px] bg-yellow-600">
-      <form action="" className="ml-10 mr-10 bg-yellow-600 font-bold">
+      <form onSubmit={(e)=>{
+        submithandler(e)
+      }} action="" className="ml-10 mr-10 bg-yellow-600 font-bold">
         <h1 className="text-4xl font-bold flex justify-center mt-5 text-black">
           Welcome Back!
         </h1>
